@@ -34,20 +34,19 @@ if (  count == 0 ) {
    newState = digitalRead(butPin);
   if ( newState == 0 ) {
     firstServoPos();
-    delay(100);
   }
   count++;
+  delay(100);
 }
 
 newState = digitalRead(butPin);
 if ( count==1  ) {
   newState = digitalRead(butPin);
   if  ( newState == 0  ) {
-    secondServoPos();
-    delay(100);
+    secondServoPos();   
     }
     count++;
-     
+    delay(100);    
   }
 count = 0;
 
